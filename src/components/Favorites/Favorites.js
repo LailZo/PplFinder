@@ -5,7 +5,7 @@ import { usePeopleFetch } from "hooks";
 import * as S from "./style";
 
 const Favorites = () => {
-// const { users, isLoading } = usePeopleFetch();
+
 
 
   return (
@@ -16,8 +16,6 @@ const Favorites = () => {
             Fav
           </Text>
         </S.Header>
-        {/* <UserList  users={users} isLoading={isLoading} /> */}
-
       </S.Content>
     </S.Home>
   );

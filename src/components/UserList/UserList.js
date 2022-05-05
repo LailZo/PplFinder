@@ -67,41 +67,6 @@ const UserList = ({ users, isLoading, lastUserRef }) => {
   };
 
 
-  // const handleHeart = (index, user) =>{
-  //   console.log(index, user)
-  //   setHoveredUserId(index);
-  //   const ob = {index : user}
-  //   let fav = [...faviorates]
-  //   fav.push(ob)
-  //   setFaviorates(fav)
-
-
-
-  // const ifClicked = (index) =>{
-
-  //   if(typeof(favorites)!='undefined' &&  favorites.length >0){
-  //     if(favorites.includes(users[index]))
-  //     {
-  //       let ind = favorites.indexOf(users[index])
-  //       let fav = [...favorites]
-  //       fav.splice(ind,1)
-  //       return true 
-  //     } 
-  //    } else{
-  //       let fav = [...favorites]
-  //       fav.push(users[index])
-  //       setFavorites(fav)
-  //       return false; 
-  //     }
-
-  // }
-
-  const checkClicked = (user) => {
-    let fav = { ...favorites }
-    return fav[user]
-  }
-
-
   return (
     <S.UserList>
       <S.Filters>
