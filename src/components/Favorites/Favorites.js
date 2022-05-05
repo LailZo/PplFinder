@@ -4,22 +4,20 @@ import UserList from "components/UserList";
 import { usePeopleFetch } from "hooks";
 import * as S from "./style";
 
-const Home = () => {
-  const { users, isLoading, lastUserRef } = usePeopleFetch();
+const Favorites = () => {
+// const { users, isLoading } = usePeopleFetch();
+
 
   return (
     <S.Home>
       <S.Content>
         <S.Header>
           <Text size="64px" bold>
-            PplFinder
+            Fav
           </Text>
         </S.Header>
-        <UserList
-          users={users}
-          isLoading={isLoading}
-          lastUserRef={lastUserRef}
-        />
+        {/* <UserList  users={users} isLoading={isLoading} /> */}
+
       </S.Content>
     </S.Home>
   );
